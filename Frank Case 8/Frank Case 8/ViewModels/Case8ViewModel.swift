@@ -16,16 +16,21 @@ class Case8ViewModel {
         static let analyticDataUrl = "http://positioning-test.mapsted.com/api/Values/GetAnalyticData/"
     }
     
-    var analyticDataArray = [AnalyticData]() {
-        didSet {
-            print("++++\(analyticDataArray.count)")
-        }
-    }
-    var buildings = [Building]() {
-        didSet {
-            print("------\(buildings.count)")
-        }
-    }
+    var finalResult = FinalResult()
+    
+//    var analyticDataArray = [AnalyticData]() {
+//        didSet {
+//            print("++++\(analyticDataArray.count)")
+//            analyticDataArray.forEach { (analyticData) in
+//                print("Total cost of \(analyticData.manufacturer): \(analyticData.totalCostOfManufacturer)")
+//            }
+//        }
+//    }
+//    var buildings = [Building]() {
+//        didSet {
+//            print("------\(buildings.count)")
+//        }
+//    }
     
     var flag: Int = 0 {
         didSet {
@@ -45,8 +50,7 @@ class Case8ViewModel {
         api.fetchData(with: Constants.buildingDataUrl) { (result: Result<[Building], Error>) in
             switch result {
             case .success(let dataList):
-                
-                self.buildings.append(contentsOf: dataList)
+                self.finalResult.buildings.append(contentsOf: dataList)
                 self.flag += 1
             case .failure(let error):
                 print(error.localizedDescription)
@@ -57,8 +61,7 @@ class Case8ViewModel {
         api.fetchData(with: Constants.analyticDataUrl) { (result: Result<[AnalyticData], Error>) in
             switch result {
             case .success(let dataList):
-                
-                self.analyticDataArray.append(contentsOf: dataList)
+                self.finalResult.analyticDataArray.append(contentsOf: dataList)
                 self.flag += 1
             case .failure(let error):
                 print(error.localizedDescription)
@@ -66,6 +69,13 @@ class Case8ViewModel {
             downloadGroup.leave()
         }
         downloadGroup.wait()
+        let cost = finalResult.totalCostByManufacturer(manufacturer: "Motorola")
+        let costByCategory = finalResult.totalCostByCategory(categoryId: 6)
+        let costByCountry = finalResult.totalCostByCountry(country: "United States")
+        print(costByCountry)
+        print(finalResult.totalCostByState(state: "Ontario"))
+        print(finalResult.mostTotalPurchasesBuilding() ?? "n/a")
+        print(finalResult.numberOfPurchase(itemId: 94))
         print("========================")
     }
     
