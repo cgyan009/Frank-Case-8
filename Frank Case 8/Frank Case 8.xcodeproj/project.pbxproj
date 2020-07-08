@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		DEA525B224B534C500DA9198 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA525B124B534C500DA9198 /* AppDelegate.swift */; };
 		DEA525B424B534C500DA9198 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA525B324B534C500DA9198 /* SceneDelegate.swift */; };
-		DEA525B624B534C500DA9198 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA525B524B534C500DA9198 /* ViewController.swift */; };
-		DEA525B924B534C500DA9198 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEA525B724B534C500DA9198 /* Main.storyboard */; };
 		DEA525BB24B534C600DA9198 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEA525BA24B534C600DA9198 /* Assets.xcassets */; };
 		DEA525BE24B534C600DA9198 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEA525BC24B534C600DA9198 /* LaunchScreen.storyboard */; };
+		DEA525CD24B5389100DA9198 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA525CC24B5389100DA9198 /* HomeViewController.swift */; };
+		DEA525CF24B53BEC00DA9198 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA525CE24B53BEC00DA9198 /* Api.swift */; };
+		DEA525D124B540A100DA9198 /* Building.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA525D024B540A100DA9198 /* Building.swift */; };
+		DEA525D324B5524900DA9198 /* AnalyticData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA525D224B5524900DA9198 /* AnalyticData.swift */; };
+		DEA525D524B561C800DA9198 /* FinalResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA525D424B561C800DA9198 /* FinalResult.swift */; };
+		DEA525D724B5670C00DA9198 /* Case8ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA525D624B5670C00DA9198 /* Case8ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DEA525AE24B534C500DA9198 /* Frank Case 8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Frank Case 8.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEA525B124B534C500DA9198 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEA525B324B534C500DA9198 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DEA525B524B534C500DA9198 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DEA525B824B534C500DA9198 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DEA525BA24B534C600DA9198 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEA525BD24B534C600DA9198 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DEA525BF24B534C600DA9198 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEA525CC24B5389100DA9198 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DEA525CE24B53BEC00DA9198 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		DEA525D024B540A100DA9198 /* Building.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Building.swift; sourceTree = "<group>"; };
+		DEA525D224B5524900DA9198 /* AnalyticData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticData.swift; sourceTree = "<group>"; };
+		DEA525D424B561C800DA9198 /* FinalResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalResult.swift; sourceTree = "<group>"; };
+		DEA525D624B5670C00DA9198 /* Case8ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Case8ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,67 @@
 		DEA525B024B534C500DA9198 /* Frank Case 8 */ = {
 			isa = PBXGroup;
 			children = (
-				DEA525B124B534C500DA9198 /* AppDelegate.swift */,
-				DEA525B324B534C500DA9198 /* SceneDelegate.swift */,
-				DEA525B524B534C500DA9198 /* ViewController.swift */,
-				DEA525B724B534C500DA9198 /* Main.storyboard */,
-				DEA525BA24B534C600DA9198 /* Assets.xcassets */,
+				DEA525CB24B5368C00DA9198 /* Supporting Files */,
+				DEA525CA24B5366F00DA9198 /* Views and ViewControllers */,
+				DEA525C924B5365000DA9198 /* ViewModels */,
+				DEA525C824B5362D00DA9198 /* Extensions */,
+				DEA525C624B5360900DA9198 /* Api */,
+				DEA525C524B535F500DA9198 /* Models */,
 				DEA525BC24B534C600DA9198 /* LaunchScreen.storyboard */,
 				DEA525BF24B534C600DA9198 /* Info.plist */,
 			);
 			path = "Frank Case 8";
+			sourceTree = "<group>";
+		};
+		DEA525C524B535F500DA9198 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DEA525D024B540A100DA9198 /* Building.swift */,
+				DEA525D224B5524900DA9198 /* AnalyticData.swift */,
+				DEA525D424B561C800DA9198 /* FinalResult.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DEA525C624B5360900DA9198 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				DEA525CE24B53BEC00DA9198 /* Api.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		DEA525C824B5362D00DA9198 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DEA525C924B5365000DA9198 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DEA525D624B5670C00DA9198 /* Case8ViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DEA525CA24B5366F00DA9198 /* Views and ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DEA525CC24B5389100DA9198 /* HomeViewController.swift */,
+			);
+			path = "Views and ViewControllers";
+			sourceTree = "<group>";
+		};
+		DEA525CB24B5368C00DA9198 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DEA525B124B534C500DA9198 /* AppDelegate.swift */,
+				DEA525B324B534C500DA9198 /* SceneDelegate.swift */,
+				DEA525BA24B534C600DA9198 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +187,6 @@
 			files = (
 				DEA525BE24B534C600DA9198 /* LaunchScreen.storyboard in Resources */,
 				DEA525BB24B534C600DA9198 /* Assets.xcassets in Resources */,
-				DEA525B924B534C500DA9198 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +197,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEA525B624B534C500DA9198 /* ViewController.swift in Sources */,
 				DEA525B224B534C500DA9198 /* AppDelegate.swift in Sources */,
 				DEA525B424B534C500DA9198 /* SceneDelegate.swift in Sources */,
+				DEA525D124B540A100DA9198 /* Building.swift in Sources */,
+				DEA525CF24B53BEC00DA9198 /* Api.swift in Sources */,
+				DEA525D324B5524900DA9198 /* AnalyticData.swift in Sources */,
+				DEA525CD24B5389100DA9198 /* HomeViewController.swift in Sources */,
+				DEA525D524B561C800DA9198 /* FinalResult.swift in Sources */,
+				DEA525D724B5670C00DA9198 /* Case8ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DEA525B724B534C500DA9198 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DEA525B824B534C500DA9198 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DEA525BC24B534C600DA9198 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
